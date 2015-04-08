@@ -1,7 +1,10 @@
 .customer
+  .actions
+    span = link_to 'x', customer, method: :delete, data: { confirm: 'Are you sure?' }
+    span = link_to 'edit', edit_customer_path(customer)
   h2 = customer.full_name
   - if customer.image.present?
-    p = image_tag customer.image
+    p = image_tag customer.image, width: 200
   p
     strong Province: 
     - if customer.province.present?

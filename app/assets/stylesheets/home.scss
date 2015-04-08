@@ -14,18 +14,37 @@
 header nav ul {
     list-style: none;
     padding: 0;
+    margin-bottom: 3em;
+
     li {
         display: inline-block;
     }
 }
 
+.customers {
+    margin-top: 25px;
+    margin-left: -25px;
+}
+
 .customer {
     float: left;
-    width: 250px;
-    height: 500px;
-    margin-right: 20px;
-    margin-bottom: 20px;     
+    width: 255px;
+    height: 450px;
+    margin-left: 25px;
+    margin-bottom: 25px;     
     border: 1px solid grey;
     background-color: white;
     padding: 1em;
+    
+    h2 {
+        margin-top: 0;
+    }
+    
+    .actions {
+        overflow: auto;
+        span {
+            float: right;
+            padding-left: 0.5em;
+        }
+    }
 }

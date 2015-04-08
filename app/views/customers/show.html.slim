@@ -1,20 +1,6 @@
 p#notice = notice
 
-p
-  strong Full name:
-  = @customer.full_name
-p
-  strong Phone number:
-  = @customer.phone_number
-p
-  strong Email address:
-  = @customer.email_address
-p
-  strong Image:
-  = @customer.image
-p
-  strong Notes:
-  = @customer.notes
+= render @customer
 
 = link_to 'Edit', edit_customer_path(@customer)
 '|

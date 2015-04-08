@@ -1,3 +1,31 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#wrapper {
+    width: 900px;
+    border: 1px solid grey;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #efefef;
+    overflow: auto;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    li {
+        display: inline-block;
+    }
+}
+
+.customer {
+    float: left;
+    width: 250px;
+    height: 500px;
+    margin-right: 20px;
+    margin-bottom: 20px;     
+    border: 1px solid grey;
+    background-color: white;
+    padding: 1em;
+}

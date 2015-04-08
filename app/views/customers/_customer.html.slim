@@ -3,17 +3,17 @@
   - if customer.image.present?
     p = image_tag customer.image
   p
-    strong Province:
+    strong Province: 
     - if customer.province.present?
       = customer.province.name
     - else
       | None
   p
-    strong Phone number:
+    strong Phone number: 
     = customer.phone_number
   p
-    strong Email address:
-    = customer.email_address
+    strong Email: 
+    = mail_to customer.email_address
   p
-    strong Notes:
+    strong Notes: 
     = customer.notes

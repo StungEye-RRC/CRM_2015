@@ -6,13 +6,14 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    header
-      nav
-        ul
-          li = link_to 'Home', root_path
-          li = link_to 'Missing Email', missing_email_path
-          li = link_to 'Alphabetized', alphabetized_path
-          li = link_to 'Provinces Admin', provinces_path
-          li = link_to 'Customer Admin', customers_path
-
-    == yield
+    #wrapper
+      header
+        nav
+          ul
+            li = link_to 'Home', root_path
+            li = link_to 'Missing Email', missing_email_path
+            li = link_to 'Alphabetized', alphabetized_path
+            li = link_to 'Provinces Admin', provinces_path
+            li = link_to 'Customer Admin', customers_path
+  
+      == yield

@@ -1,14 +1,14 @@
 .customer
   h2 = customer.full_name
   - if customer.image.present?
-    p = image_tag @customer.image
+    p = image_tag customer.image
   p
     strong Phone number:
-    = @customer.phone_number
+    = customer.phone_number
   p
     strong Email address:
-    = @customer.email_address
+    = customer.email_address
 
   p
     strong Notes:
-    = @customer.notes
+    = customer.notes

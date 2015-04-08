@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  root to: 'home#index'
+
+  get 'missing_email', to: 'home#missing_email'
+
+  get 'alphabetized', to: 'home#alphabetized'
+
   resources :customers
 
   # The priority is based upon order of creation: first created -> highest priority.

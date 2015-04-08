@@ -19,6 +19,9 @@
     = f.label :image
     = f.text_field :image
   .field
+    = f.label :province
+    = f.select :province_id, options_from_collection_for_select(@provinces, 'id', 'name')
+  .field
     = f.label :notes
     = f.text_area :notes
   .actions = f.submit

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :provinces
+
   root to: 'home#index'
 
   get 'missing_email', to: 'home#missing_email'

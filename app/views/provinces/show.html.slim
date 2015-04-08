@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @province.name
+p
+  strong Description:
+  = @province.description
+
+= link_to 'Edit', edit_province_path(@province)
+'|
+= link_to 'Back', provinces_path

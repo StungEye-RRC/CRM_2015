@@ -6,4 +6,10 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
+    header
+      nav
+        ul
+          li = link_to 'Home', root_path
+          li = link_to 'Missing Email', missing_email_path
+          li = link_to 'Alphabetized', alphabetized_path
     == yield

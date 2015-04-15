@@ -2,6 +2,10 @@
   .actions
     span = link_to 'x', customer, method: :delete, data: { confirm: 'Are you sure?' }
     span = link_to 'edit', edit_customer_path(customer)
+    - if customers_to_call.include?(customer)
+      span = link_to 'unflag', remove_from_call_list_path(customer), method: :delete
+    - else
+      span = link_to 'to call', add_to_call_list_path(customer), method: :post
   h2 = customer.full_name
   - if customer.image.present?
     p = image_tag customer.image, width: 200

@@ -16,4 +16,6 @@ html
             li = link_to 'Provinces Admin', provinces_path
             li = link_to 'Customer Admin', customers_path
   
+      - unless customers_to_call.empty?
+        = render 'shared/customers_to_call'
       == yield

@@ -1,0 +1,5 @@
+#customers_to_call
+  h2 Customers to Call
+  - customers_to_call.each do |customer|
+    p = link_to customer.full_name, customer
+  p= link_to 'Clear List', clear_to_call_list_path, method: :post

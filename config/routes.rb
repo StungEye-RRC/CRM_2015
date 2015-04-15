@@ -6,6 +6,18 @@ Rails.application.routes.draw do
   get 'missing_email', to: 'home#missing_email'
 
   get 'alphabetized', to: 'home#alphabetized'
+  
+  post 'add_to_call_list/:id',
+       to: 'home#add_customer_to_call_list',
+       as: 'add_to_call_list'
+       
+  delete 'remove_from_call_list/:id',
+         to: 'home#remove_customer_from_call_list',
+         as: 'remove_from_call_list'
+         
+  post 'clear_to_call_list',
+       to: 'home#clear_to_call_list',
+       as: 'clear_to_call_list'
 
   resources :customers
 
